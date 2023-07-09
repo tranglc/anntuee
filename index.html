@@ -4,7 +4,7 @@
 
 <HEAD>
 
-        <TITLE> New Document </TITLE>
+        <TITLE> From Trang Le <3 </TITLE>
 
         <META NAME="Generator" CONTENT="EditPlus">
 
@@ -670,7 +670,7 @@
                         audio.play();
                 });
 
-                var fadeDuration = 200; // Fade in/out and push soft effect in milliseconds
+                var fadeDuration = 1000; // Fade in/out and push soft effect in milliseconds
 
                 audio.addEventListener('timeupdate', function () {
                         var currentTime = audio.currentTime;
@@ -686,7 +686,7 @@
                                         if (currentTime >= fadeOutTime) {
                                                 var fadeOutDuration = (currentTime - fadeOutTime) * 1000;
                                                 lyricsDiv.style.transition = `opacity ${fadeOutDuration}ms ease`;
-                                                lyricsDiv.style.opacity = 0;
+                                                lyricsDiv.style.opacity = 1;
                                         } else if (currentTime >= fadeInTime) {
                                                 var fadeInDuration = (currentTime - fadeInTime) * 1000;
                                                 lyricsDiv.style.transition = `opacity ${fadeInDuration}ms ease`;
